@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/titlebar"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_config"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/app_more_title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@drawable/welcomebg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/standard_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <!-- app version -->
+
+            <TextView
+                android:id="@+id/fpga_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/mode_switch"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/mode_switch_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View style="@style/myStraightLine" />
+
+        <RelativeLayout
+            android:id="@+id/channel_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/msg_channel"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/msg_channel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View style="@style/myStraightLine" />
+
+        <!-- sound notify -->
+        <RelativeLayout
+            android:id="@+id/synchro_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/syn_sate"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/syn_sate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+
+
+        <View style="@style/myStraightLine" />
+        <RelativeLayout
+            android:id="@+id/pci_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/pci"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/pci_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View style="@style/myStraightLine" />
+
+        <RelativeLayout
+            android:id="@+id/display_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/display_mode"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/display_mode_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View style="@style/myStraightLine" />
+      <!--  <TextView
+            android:id="@+id/Test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:text=" "
+            android:textSize="17sp" />
+-->
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

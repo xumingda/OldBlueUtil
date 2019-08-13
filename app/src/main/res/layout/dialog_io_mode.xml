@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_IO_Mode_Set_Input"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/rg_Input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_IO_Mode_Set_In_Char"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rb_IO_Mode_Set_Char"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rb_IO_Mode_Set_In_Hex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_IO_Mode_Set_Hex"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/hr_back_white" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_IO_Mode_Set_Output"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/rg_Output"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_IO_Mode_Set_Out_Char"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rb_IO_Mode_Set_Char"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rb_IO_Mode_Set_Out_Hex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_IO_Mode_Set_Hex"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

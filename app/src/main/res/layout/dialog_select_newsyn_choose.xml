@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/clear_cache_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/syn_sate"
+        android:textSize="15sp" />
+
+        <View style="@style/myStraightLine"
+            android:id="@+id/clear_cache_line"
+            android:layout_below="@+id/clear_cache_title"/>
+
+    <TextView
+        android:id="@+id/near_state1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear_cache_line"
+        android:padding="15dp"
+        android:text="@string/syn_sate_near"
+        android:textSize="13sp"/>
+
+        
+        <View style="@style/myStraightLine"
+            android:id="@+id/clear_cache_line_1"
+            android:layout_below="@+id/near_state1"/>
+
+    <TextView
+        android:id="@+id/yuan_state2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear_cache_line_1"
+        android:padding="15dp"
+        android:text="@string/syn_sate_yuan"
+        android:textSize="13sp"/>
+  
+    <View style="@style/myStraightLine"
+        android:id="@+id/clear_cache_line_2"
+        android:layout_below="@+id/yuan_state2"/>
+
+   <!-- <TextView
+        android:id="@+id/display_state3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear_cache_line_2"
+        android:padding="15dp"
+        android:text="@string/display_state3"
+        android:textSize="13sp"/>
+
+    <View style="@style/myStraightLine"
+        android:id="@+id/clear_cache_line_3"
+        android:layout_below="@+id/display_state3"/>
+
+    <TextView
+        android:id="@+id/display_state4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear_cache_line_3"
+        android:padding="15dp"
+        android:text="@string/display_state4"
+        android:textSize="13sp"/>
+
+    <View style="@style/myStraightLine"
+        android:id="@+id/clear_cache_line_4"
+        android:layout_below="@+id/display_state4"/>-->
+
+    <Button
+        android:id="@+id/selectsynCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancel"
+        android:background="@null"
+        android:padding="20dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/clear_cache_line_2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
